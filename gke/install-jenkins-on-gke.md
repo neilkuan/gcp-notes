@@ -27,7 +27,7 @@
 ( helm repo add stable https://charts.helm.sh/stable )
 "stable" has been added to your repositories
 
-$ helm repo update
+( helm repo update )
 Hang tight while we grab the latest from your chart repositories...
 ...Successfully got an update from the "stable" chart repository
 Update Complete. ⎈Happy Helming!⎈
@@ -35,7 +35,7 @@ Update Complete. ⎈Happy Helming!⎈
 
 ### Install Jenkins
 ```bash
-$ helm install cd stable/jenkins -f jenkins/values.yaml --version 1.2.2 --wait
+( helm install cd stable/jenkins -f jenkins/values.yaml --version 1.2.2 --wait )
 
 NAME: cdLAST DEPLOYED: Sun Sep 26 09:33:13 2021
 NAMESPACE: default
