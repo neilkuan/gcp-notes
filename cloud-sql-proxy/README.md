@@ -47,12 +47,6 @@ If the instance has both public and private IP configured, and you want the Clou
 - 在與 CloudSQL 相同的 VPC 內的 GCE 上執行以下command。
 ```bash
 ./cloud_sql_proxy -instances=INSTANCE_CONNECTION_NAME=tcp:0.0.0.0:1234 -ip_address_types=PRIVATE
-```
-- Client 再透過 ssh Tunnel 連線
- 
-#### Example for mysql
-- 設定ssh Tunnel（連線到啟用 Cloud SQL Auth Proxy 的GCE）。
-![截圖 2021-12-07 下午1 55 12](https://user-images.githubusercontent.com/46012524/144974375-9eda2050-9f06-426a-91fb-93270e7cd776.png)
-
-- 其他設定像是連線地端DB.
-![截圖 2021-12-07 下午1 54 38](https://user-images.githubusercontent.com/46012524/144974322-4a875b6b-c623-49b0-afb8-f9505b911d8e.png)
+``` 
+#### Example for mysql (x.x.x.x GCE public)
+-  mysql -hx.x.x.x.x -p1234 -uadmin
