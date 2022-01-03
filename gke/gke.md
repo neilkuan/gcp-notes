@@ -52,7 +52,7 @@ gcloud container node-pools create $NODE_POOL_NAME \
 
 1. use `gcloud` command sdk to show this service account binding role. 
 ```bash
-gcloud projects get-iam-policy [your-project-id] --flatten="bindings[].members" --format="table(bindings.role)" --filter="bindings.members:[your-project-id]=computer@developer.gserviceaccount.com"
+gcloud projects get-iam-policy [your-project-id] --flatten="bindings[].members" --format="table(bindings.role)" --filter="bindings.members:[your-project-id]-compute@developer.gserviceaccount.com"
                          # <- I got null!!!.
 ```
 
